@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+h2, th, p {
+    color: #696969;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.buttonBlue {
+    border: none;
+    color: white;
+    background-color: #095a80;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .buttonGreen {
+    border: none;
+    color: white;
+    background-color: #328ba8;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .buttonOrange {
+    border: none;
+    color: #141212;
+    background-color: #87CEFA;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  table {
+  border: none;
+  border-collapse: collapse;
+  width: 75%;
+  
+  }
+  
+  td, th {
+  border: none;
+  /*text-align: center;*/
+  padding: .8rem 7rem;
+  font-size: 1.5rem;
+  }
+
+  
+
+  #feedback {
+      font-size: 1.5rem;
+      color: #696969;
+      font-weight: 700;
+      font-style: italic;
+   
+  }
+  
+  tr {
+  border: none;
+  
+  }
+
+  @media(max-width: 768px) {
+      h2, 
+      #feedback {
+          font-size: 1.5rem;
+      }
+      th {
+          font-size: 1rem;
+      }
+
+      .buttonBlue,
+      .buttonGreen,
+      .buttonOrange {
+          font-size: 1rem;
+      }
+
+      td, th {
+          padding: .8rem;
+      }
+  }
