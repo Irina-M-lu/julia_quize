@@ -12,10 +12,9 @@ body {
 h2 {
     font-size: 2rem;
     text-align: center;
-
 }
 
-h2, th, p {
+h2, th {
     color: #696969;
 }
 
@@ -23,25 +22,28 @@ h2, th, p {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
 
 .buttonBlue {
     border: none;
-    color: white;
-    background-color: #095a80;
+    width: 20rem;
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
+    color: white;
+    background-color: #095a80;
+    text-align: center;
+    text-decoration: none;
+    
   }
   
   .buttonGreen {
     border: none;
+    width: 20rem;
     color: white;
     background-color: #328ba8;
     padding: 15px 32px;
@@ -56,6 +58,7 @@ h2, th, p {
   
   .buttonOrange {
     border: none;
+    width: 20rem;
     color: #141212;
     background-color: #87CEFA;
     padding: 15px 32px;
@@ -71,25 +74,24 @@ h2, th, p {
   table {
   border: none;
   border-collapse: collapse;
-  width: 100%;
+  width: 75%;
   
   }
   
   td, th {
   border: none;
   /*text-align: center;*/
-  padding: .8rem 7rem;
+  padding: .8rem 9rem;
   font-size: 1.5rem;
   }
 
   
 
-  #feedback {
+  p {
       font-size: 1.5rem;
-      color: #696969;
+      color: tomato;
       font-weight: 700;
       font-style: italic;
-   
   }
   
   tr {
@@ -97,22 +99,43 @@ h2, th, p {
   
   }
 
-  @media(max-width: 768px) {
-      h2, 
-      #feedback {
-          font-size: 1.5rem;
-      }
-      th {
-          font-size: 1rem;
-      }
+  @media(max-width: 812px) {
+     
+    h2 {
+         font-size: 2rem;
+     }
 
-      .buttonBlue,
-      .buttonGreen,
-      .buttonOrange {
-          font-size: 1rem;
-      }
+      td, th, p {
+        font-size: 1.5rem;
+        padding: .8rem;
+        margin: 0.5rem;
+    }
 
-      td, th {
-          padding: .8rem;
-      }
+      
+  }
+
+  @media(max-width: 500px) {
+    .buttonBlue,
+    .buttonGreen,
+    .buttonOrange {
+        width: 8rem;
+        height: 7rem;
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 2rem;
+    }
+    th {
+        font-size: 1rem;
+    }
+
+    td, th, p {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        margin: 2px;
+    }
+
+    
   }
